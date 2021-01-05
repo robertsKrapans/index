@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="c.css">
+  </head>   <style>
+        * {
+            border: 1px so
+        }
+
+        .row {
+            display: flex;
+        }
+
+        #container {
+            margin: 5px;
+            border: 5px solid red;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            background-color: royalblue;
+            color: white;
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 200px;
+            transition: transform .2s;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+        }
+
+        .tag {
+            padding-right: 10px;
+            margin-right: 10px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+
+
+            text-align: left;
+        }
+
+        .data {
+            border-bottom: 1px solid black;
+        }
+
+        #buy {
+            color: white;
+            background-color: red;
+            font-size: 20px;
+
+        }
+
+        #data-set {
+            padding: 6px;
+        }
+
+        #buy:hover {
+            background-color: black;
+            color: blue;
+
+        }
+
+        #buy:active {
+            background-color: yellow;
+            color: paleturquoise;
+
+        }
+
+    </style>   
+        <!-- Preces objekta sakums -->
+
+        <div id="container">
+            <div id="data-set">
+                <h1>Prece!</h1>
+                <img src= "tele.jpg"
+ >
+                    <div id="tags">
+                        <div class="tag">Preces cena</div>
+                        <div class="tag">Preces krāsa</div>
+                        <div class="tag">Preces stāvoklis</div>
+                    </div>
+                    <div id="marka">
+                        <div id="stāvoklis" class="data">Jauns</div>
+                        <div id="krāsa" class="data">Melns</div>
+                        </div><div id="cena" class="data">"400"</div>
+                                                                
+                    </div>
+                </div>
+
+
+
+            
+            <button id="buy">Pirkt</button>
+        
+
+        <!-- Preces objekta beigas -->
+     
+ <body> 
+     <script>
+   function prece(marka,stāvoklis,krāsa,cena) {
+            this.marka = marka;
+       this.stāvoklis = stāvoklis;
+       this.krāsa = krāsa;
+       this.cena = cena;
+        }
+
+    var prece1 = new prece(samsung,jauns,melns,100);
+  var prece2 = new prece(iphone,lietots,balts,130);
+    var prece3 = new prece(nokia,jauns,melns,90);
+
+
+        document.getElementById("marka").innerHTML = prece1.marka;
+        var b = document.getElementById("stāvoklis");
+        b.innerHTML = prece1.stāvoklis;
+        var c = document.getElementById("krāsa");
+        c.innerHTML = prece1.krāsa;
+var d = document.getElementById("cena");
+    d.innerHTML = prece1.cena;
+    if
+         var izvele = 2;
+
+        if (izvele == 1) {
+            alert("Izvele ir 1");
+        } 
+        else if (izvele == 2) {
+            alert("Izvele ir 2");
+        } 
+        else if (izvele == 3) {
+            alert("Izvele ir 3");
+        } 
+        else if (izvele == 4) {
+            alert("Izvele ir 4");
+        } 
+        else if (izvele == 5) {
+            alert("Izvele ir 5");
+        } 
+        else {
+            alert("Nepareiza izvele");
+        }
+    
+    </script> 
+     <h1>telefons tieši tev</h1>
+     <div class="col-3">Šeit jūs varat noskatīt sev jaunu telefonu jaunu vai lietotu</div>
+    
+     <div class="row">
+         <div>marka</div>
+         <div id="marka"></div>
+     </div>
+     <div class="row">
+     <div>stāvoklis</div>
+     <div id="stāvoklis"></div>
+     </div>
+     <div class="row">
+         <div>krāsa</div>
+         <div id="krāsa"></div>
+         <div class="row">
+             <div id="cena"></div></div>
+     </div>
+     
+     
+    </body>
+    
+ 
+        
+     
+   
+     </html>
